@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUXE | Modern Fashion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <!-- === HTML STRUCTURE === -->
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="logo text-2xl font-bold">
+                <span class="text-accent">LUXE</span> Fashion
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#" class="text-white hover:text-accent transition">Home</a>
+                <a href="#collections" class="text-white hover:text-accent transition">Collections</a>
+                <a href="#showcase" class="text-white hover:text-accent transition">Showcase</a>
+                <a href="#trends" class="text-white hover:text-accent transition">Trends</a>
+                <a href="#about" class="text-white hover:text-accent transition">About</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button class="bg-accent hover:bg-accent-dark text-white px-4 py-2 rounded-md">
+                    Shop Now
+                </button>
+                <button class="md:hidden text-white">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Redefine Your Style</h1>
+            <p class="text-xl md:text-2xl mb-8">Discover the latest collections crafted for the modern individual</p>
+            <button class="bg-accent hover:bg-accent-dark text-white px-8 py-3 rounded-md font-bold">
+                Explore Collections
+            </button>
+        </div>
+    </section>
+
+    <!-- Featured Collections -->
+    <section id="collections" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Featured Collections</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Curated selections from top designers around the world</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Collection 1 -->
+                <div class="collection-card">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1710552524021-a8dc68c2a8dc?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Modern urban streetwear collection featuring oversized jackets and distressed denim" class="w-full h-80 object-cover">
+                        <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4">
+                            <h3 class="font-bold text-lg">Urban Edge</h3>
+                            <p class="text-sm">Streetwear Essentials</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Collection 2 -->
+                <div class="collection-card">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.pexels.com/photos/932401/pexels-photo-932401.jpeg" alt="Elegant evening dresses in silk and lace with floral embroidery details" class="w-full h-80 object-cover">
+                        <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4">
+                            <h3 class="font-bold text-lg">Evening Elegance</h3>
+                            <p class="text-sm">Formal Attire</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Collection 3 -->
+                <div class="collection-card">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.pexels.com/photos/1038000/pexels-photo-1038000.jpeg" alt="Minimalist Scandinavian-inspired fashion with neutral tones and clean lines" class="w-full h-80 object-cover">
+                        <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4">
+                            <h3 class="font-bold text-lg">Nordic Minimalism</h3>
+                            <p class="text-sm">Everyday Essentials</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Collection 4 -->
+                <div class="collection-card">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.pexels.com/photos/965989/pexels-photo-965989.jpeg" alt="Bohemian summer collection with flowing fabrics, floral prints, and wide-brim hats" class="w-full h-80 object-cover">
+                        <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4">
+                            <h3 class="font-bold text-lg">Boho Summer</h3>
+                            <p class="text-sm">Seasonal Collection</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fashion Showcase -->
+    <section id="showcase" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Seasonal Showcase</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Highlighting the most coveted pieces of the season</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Item 1 -->
+                <div class="showcase-item">
+                    <img src="https://images.pexels.com/photos/1152077/pexels-photo-1152077.jpeg" alt="Designer leather handbag with gold hardware against marble background" class="w-full h-96 object-cover">
+                    <div class="showcase-overlay">
+                        <h3 class="font-bold text-xl">Luxe Handbag</h3>
+                        <p class="text-gray-300">Premium Italian leather</p>
+                        <button class="mt-2 bg-accent hover:bg-accent-dark text-white px-4 py-2 rounded-md">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Item 2 -->
+                <div class="showcase-item">
+                    <img src="https://images.pexels.com/photos/8327517/pexels-photo-8327517.jpeg" alt="Signature silk scarf with abstract geometric patterns in bold colors" class="w-full h-96 object-cover">
+                    <div class="showcase-overlay">
+                        <h3 class="font-bold text-xl">Signature Scarf</h3>
+                        <p class="text-gray-300">100% pure silk</p>
+                        <button class="mt-2 bg-accent hover:bg-accent-dark text-white px-4 py-2 rounded-md">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Item 3 -->
+                <div class="showcase-item">
+                    <img src="https://images.pexels.com/photos/2759779/pexels-photo-2759779.jpeg" alt="Limited edition sneakers with futuristic design and metallic accents" class="w-full h-96 object-cover">
+                    <div class="showcase-overlay">
+                        <h3 class="font-bold text-xl">Futura Sneakers</h3>
+                        <p class="text-gray-300">Limited Edition</p>
+                        <button class="mt-2 bg-accent hover:bg-accent-dark text-white px-4 py-2 rounded-md">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trending Now -->
+    <section id="trends" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Trending Now</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">What's making waves in the fashion world</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Trend 1 -->
+                <div class="trend-card p-6 bg-gray-50 rounded-md">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-accent text-white p-3 rounded-full mr-4">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <h3 class="font-bold text-lg">Monochromatic Looks</h3>
+                    </div>
+                    <p class="text-gray-600">Single-color outfits are dominating runways with sleek, cohesive styling.</p>
+                    <a href="#" class="block mt-4 text-accent font-medium">Read More →</a>
+                </div>
+                
+                <!-- Trend 2 -->
+                <div class="trend-card p-6 bg-gray-50 rounded-md">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-accent text-white p-3 rounded-full mr-4">
+                            <i class="fas fa-ring"></i>
+                        </div>
+                        <h3 class="font-bold text-lg">Statement Jewelry</h3>
+                    </div>
+                    <p class="text-gray-600">Oversized, bold pieces making accessories the focal point of outfits.</p>
+                    <a href="#" class="block mt-4 text-accent font-medium">Read More →</a>
+                </div>
+                
+                <!-- Trend 3 -->
+                <div class="trend-card p-6 bg-gray-50 rounded-md">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-accent text-white p-3 rounded-full mr-4">
+                            <i class="fas fa-mountain"></i>
+                        </div>
+                        <h3 class="font-bold text-lg">Outdoor Aesthetics</h3>
+                    </div>
+                    <p class="text-gray-600">Technical fabrics meet urban style in this emerging trend.</p>
+                    <a href="#" class="block mt-4 text-accent font-medium">Read More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">Stay Updated</h2>
+            <p class="text-lg mb-8 max-w-2xl mx-auto">Subscribe to our newsletter for exclusive offers, style tips, and early access to new collections.</p>
+            
+            <div class="flex flex-col md:flex-row justify-center max-w-lg mx-auto">
+                <input type="email" placeholder="Your email address" class="newsletter-input px-4 py-3 rounded-md mb-4 md:mb-0 md:mr-2 flex-grow">
+                <button class="bg-accent hover:bg-accent-dark text-white px-8 py-3 rounded-md font-bold">
+                    Subscribe
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- About -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">LUXE Fashion</h3>
+                    <p class="text-gray-300 mb-4">Elevating your style with premium collections and timeless pieces.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-accent transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white hover:text-accent transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white hover:text-accent transition"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="footer-link">Home</a></li>
+                        <li><a href="#" class="footer-link">Collections</a></li>
+                        <li><a href="#" class="footer-link">New Arrivals</a></li>
+                        <li><a href="#" class="footer-link">About Us</a></li>
+                        <li><a href="#" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Customer Service -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Customer Service</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="footer-link">FAQs</a></li>
+                        <li><a href="#" class="footer-link">Shipping Info</a></li>
+                        <li><a href="#" class="footer-link">Returns & Exchanges</a></li>
+                        <li><a href="#" class="footer-link">Size Guide</a></li>
+                        <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact -->
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-2"></i> 
+                            123 Fashion Ave, New York
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-2"></i> 
+                            (555) 123-4567
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2"></i> 
+                            info@luxefashion.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2023 LUXE Fashion. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- === JAVASCRIPT === -->
+    <script src="script.js"></script>
+</body>
+</html>
